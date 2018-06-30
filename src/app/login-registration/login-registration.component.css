@@ -1,0 +1,21 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+}
+.login-tabs {
+  display: flex;
+  width: 900px;
+  height: 700px;
+  margin: auto;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.75);
+  padding: 12px 24px;
+}
+.tab-block {
+  padding: 12px 24px;
+  overflow-y: auto;
+  height: 100%;
+  display: flex;
+  margin: auto;
+}

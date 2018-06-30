@@ -1,4 +1,13 @@
 @import "~@angular/material/prebuilt-themes/purple-green.css";
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #232323;
+}
+body * { box-sizing: border-box; }
 a.menu-link-item {
   display: inline-block;
   margin: 6px 12px;
@@ -7,3 +16,11 @@ a.menu-link-item {
   color: #4670a9;
 }
 a.menu-link-item.active { color: #a925a7; }
+.login-tabs .mat-tab-label .mat-tab-label-content {
+  color: #555555;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.login-tabs .mat-tab-header-pagination { display: none !important; }
+.login-tabs .mat-tab-group { width: 100%; }
+.login-tabs .mat-tab-body-wrapper { flex: 1; }
