@@ -1,1 +1,9 @@
 @import "~@angular/material/prebuilt-themes/purple-green.css";
+a.menu-link-item {
+  display: inline-block;
+  margin: 6px 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #4670a9;
+}
+a.menu-link-item.active { color: #a925a7; }

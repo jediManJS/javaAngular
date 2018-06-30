@@ -1,0 +1,14 @@
+<div class="main-container">
+  <nav>
+    <a class="menu-link-item"
+            [routerLink]="['/browse']"
+            [routerLinkActive]="['active']"><mat-icon>collections_bookmark</mat-icon> Browse</a>
+    <a class="menu-link-item"
+       [routerLink]="['/explore']"
+       [routerLinkActive]="['active']"><mat-icon>explore</mat-icon> Explore</a>
+    <a class="menu-link-item"
+            [routerLink]="['/profile']"
+            [routerLinkActive]="['active']"><mat-icon>account_box</mat-icon> Profile</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

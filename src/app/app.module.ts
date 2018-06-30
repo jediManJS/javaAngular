@@ -5,6 +5,10 @@ import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { ApiModule } from './api/api.module';
+import { AuthGuard } from './app.guard';
+import { LoginRegistrationModule } from './login-registration/login-registration.module';
+import { MainModule } from './main/main.module';
 
 @NgModule({
   declarations: [
@@ -13,9 +17,16 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    SharedModule.forRoot()
+    SharedModule.forRoot(),
+    ApiModule,
+    LoginRegistrationModule,
+    MainModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    AuthGuard
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
