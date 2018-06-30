@@ -24,3 +24,14 @@ a.menu-link-item.active { color: #a925a7; }
 .login-tabs .mat-tab-header-pagination { display: none !important; }
 .login-tabs .mat-tab-group { width: 100%; }
 .login-tabs .mat-tab-body-wrapper { flex: 1; }
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color: #888888;
+  font-size: 13px;
+  font-weight: 100;
+  padding-top: 6px;
+}
+.form-error {
+  color: red;
+  border: 1px solid darkred;
+  padding: 6px;
+}

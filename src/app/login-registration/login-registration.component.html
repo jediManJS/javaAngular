@@ -6,20 +6,27 @@
           <h2>Login with user details</h2>
           <div class="login-form">
             <form [formGroup]="loginForm" (ngSubmit)="sendLoginForm()" novalidate>
-              <mat-form-field>
-                <input matInput placeholder="Email" formControlName="email" type="email">
-              </mat-form-field>
-              <mat-form-field>
-                <input matInput placeholder="Password" formControlName="password" type="password">
-              </mat-form-field>
-              <button mat-raised-button
-                      color="primary"
-                      class="reset-login-button"
-                      (click)="resetLoginForm()">Reset Fields</button>
-              <button mat-raised-button
-                      color="primary"
-                      type="submit"
-                      class="send-login-button">Login</button>
+              <div class="form-input-holder">
+                <label for="email">Email: </label>
+                <mat-form-field>
+                  <input matInput placeholder="Email" formControlName="email" type="email" id="email" required>
+                </mat-form-field>
+              </div>
+              <div class="form-input-holder">
+                <label for="password">Password: </label>
+                <mat-form-field>
+                  <input matInput placeholder="Password" formControlName="password" type="password" id="password" required>
+                </mat-form-field>
+              </div>
+              <div class="form-actions">
+                <button mat-raised-button
+                        class="reset-login-button"
+                        (click)="resetLoginForm()">Reset Fields</button>
+                <button mat-raised-button
+                        color="primary"
+                        type="submit"
+                        class="send-login-button">Login</button>
+              </div>
             </form>
           </div>
         </div>

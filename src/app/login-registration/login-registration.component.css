@@ -17,5 +17,22 @@
   overflow-y: auto;
   height: 100%;
   display: flex;
-  margin: auto;
+  flex-direction: column;
+}
+.login-form {
+  margin: 36px auto;
+}
+.form-input-holder {
+  min-width: 420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-input-holder .mat-form-field {
+  min-width: 300px;
+}
+.form-actions {
+  padding: 18px 0 0 0;
+  display: flex;
+  justify-content: space-between;
 }
